@@ -984,7 +984,7 @@ void player_unpause ()
 	LOCK (request_cond_mutex);
 	pthread_cond_signal (&request_cond);
 	UNLOCK (request_cond_mutex);
-	status_msg ("Playing")
+	status_msg ("Playing...")
 }
 
 /* Return tags for the currently played file or NULL if there are no tags.
